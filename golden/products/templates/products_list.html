@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فروشگاه طلا</title>
+</head>
+<body>
+    <h1>محصولات</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - {{ product.weight }} گرم - {{ product.total_price }} تومان</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
